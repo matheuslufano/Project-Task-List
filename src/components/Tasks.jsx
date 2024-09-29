@@ -1,4 +1,4 @@
-import { NotebookTabs , Trash2  } from "lucide-react";
+import { Square, SquareCheckBig, NotebookTabs , Trash2  } from "lucide-react";
 import { useNavigate } from "react-router-dom";
 import Button from "./Button"
 
@@ -20,10 +20,11 @@ function Tasks({ tasks, onTaskClick, onDeleteTaskClick }) {
 
                     <button 
                         onClick={() => onTaskClick(task.id)} 
-                        className={`bg-slate-400 text-left w-full text-white p-2 rounded-md ${
+                        className={`flex items-center gap-2 bg-slate-400 text-left w-full text-white p-2 rounded-md ${
                             task.isCompleted && "line-through"
                         }`}
                     >
+                        {task.isCompleted ? <SquareCheckBig/> : <Square />}
                         {task.title}
                     </button>
 
