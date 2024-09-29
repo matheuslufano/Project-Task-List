@@ -4,7 +4,7 @@ This project is a to-do list where you can add tasks (haha😅) with title and d
 
 I use react and hosted in vercel.
 
-- access my project:
+Access my project:
 https://project-task-list.vercel.app/
 
 ![alt text](<tela 1.png>) 
